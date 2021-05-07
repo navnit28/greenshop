@@ -1,15 +1,18 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 import "./Subtotal.css"
 import CurrencyFormat from "react-currency-format"
-export class Subtotal extends PureComponent {
-    render() {
-        return (
+import { useStateValue } from './StateProvider'
+import { getBasketTotal } from './reducer';
+function Subtotal() {
+    const [{basket},dispatch]= useStateValue();
+        
+    return (
             <div className="subtotal">
                 <CurrencyFormat
                 renderText={(value) => (
                     <>
                     <p>
-                        Subtotal (0 items):<strong>0</strong>
+                        Subtotal ({basket.length} items):<strong>{value}</strong>
                     </p>
                     
 
@@ -17,7 +20,7 @@ export class Subtotal extends PureComponent {
                     </>
                 )}
                 decimalScale={2}
-                value={0}
+                value={getBasketTotal(basket)}
                 displayType={"text"}
                 thousandSeparator={true}
                 prefix={"₹"}
@@ -27,7 +30,6 @@ export class Subtotal extends PureComponent {
                 </button>
             </div>
         )
-    }
 }
 
 export default Subtotal

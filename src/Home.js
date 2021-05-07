@@ -11,7 +11,7 @@ function Home() {
                     id ="1"
                     title="First painting"
                     price={2009} 
-                    image="https://orias.berkeley.edu/sites/default/files/styles/openberkeley_image_full/public/general/elementsofthekohbar.jpg?itok=ZRW6VZrD&timestamp=1530642392"
+                    image="https://5.imimg.com/data5/GLADMIN/Default/2020/9/MG/EG/VL/114522399/mithila-painting-women-with-deep-without-frame-500x500.jpg"
                     rating={5}
                 />
                 <Product
