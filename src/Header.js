@@ -15,33 +15,33 @@ function Header() {
             <img className='header__logo' src={logo} alt="logo"/>
             </Link>
             <div className="header__search">
-                <input className="header__searchInput" type="text"/>
+                <input className="header__searchInput" type="text" placeholder="Search here"/>
                 <SearchIcons className="header__searchIcon"/>
             </div>
             <div className="header__nav">
                 <div className="header__option">
                     <span className="header__optionLineOne">
-                        Hello guest
+                        
                     </span>
                     <span className="headeroptionLineTwo">
-                        Sign in
+                    Support
                     </span>
                 </div>
 
                 <div className="header__option">
                     <span className="header__optionLineOne">
-                        Returns
+                        
                     </span>
                     <span className="headeroptionLineTwo">
-                        Orders
+                    GiftCards
                     </span>
                 </div>
                 <div className="header__option">
                 <span className="header__optionLineOne">
-                        Your
+                        
                     </span>
                     <span className="headeroptionLineTwo">
-                        Prime
+                    Login
                     </span>
                 </div>
                 <Link to="/checkout">
