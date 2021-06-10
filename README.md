@@ -20,7 +20,6 @@ Features of the application:
 ![Alt Text](snaps/1.jpg?raw=true "Title")
 ![Alt Text](snaps/2.jpg?raw=true "Title")
 ![Alt Text](snaps/3.jpg?raw=true "Title")
-![Alt Text](snaps/4.jpg?raw=true "Title")
 
 
 ## Learn More
